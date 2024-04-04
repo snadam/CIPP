@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - main
-  pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - main
+#  pull_request:
+#    types: [opened, synchronize, reopened, closed]
+#    branches:
+#      - main
+#  Lines commented in order to enable CIPP to auto-upgrade to latest version.
+#  For details see https://docs.cipp.app/setup/installation/configuring-automatic-updates
 
 jobs:
   build_and_deploy_job:
